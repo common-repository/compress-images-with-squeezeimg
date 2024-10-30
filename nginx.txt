@@ -1,0 +1,101 @@
+
+
+location ~* /?(.+\.(jpg|jpeg|png|gif)) {
+
+location ~* /?(.+)(_compress.jpg)$ {
+ try_files $uri /$1 =404;
+ add_header IMAGE-COMPRESS-SQUEEZEIMG  link-image_jpg;
+ break;
+}
+location ~* /?(.+)\.(webp)$ {
+ try_files $uri /$1 =404;
+ add_header IMAGE-COMPRESS-SQUEEZEIMG-FORMAT  $format;
+ add_header IMAGE-COMPRESS-SQUEEZEIMG  link-image_webp;
+ break;
+}
+location ~* /?(.+)\.(jp2)$ {
+ try_files $uri /$1 =404;
+ add_header Content-Type image/jp2;
+ add_header IMAGE-COMPRESS-SQUEEZEIMG-FORMAT  $format;
+ add_header IMAGE-COMPRESS-SQUEEZEIMG  link-image_jp2;
+ break;
+}
+
+location ~* /?(.+)\.(avif)$ {
+ try_files $uri /$1 =404;
+ add_header Content-Type image/avif;
+ add_header IMAGE-COMPRESS-SQUEEZEIMG-FORMAT  $format;
+ add_header IMAGE-COMPRESS-SQUEEZEIMG  link-image_avif;
+ break;
+}
+
+
+set $module_status 1;
+set $format .jpg;
+set $safari 0;
+set $rules_format_jpg 0;
+set $rules_format_webp 0;
+set $rules_format_jp2 0;
+set $rules_format_avif 0;
+
+
+if ($http_accept !~* "webp"){
+   set $safari 1;
+}
+if ( -f $document_root/wp-content/plugins/imagecompresssqueezeimg/config/jpg.enabled ) {
+  set $rules_format_jpg 1;
+}
+if ( -f $document_root/wp-content/plugins/imagecompresssqueezeimg/config/webp.enabled ) {
+  set $rules_format_webp 2;
+}
+if ( -f $document_root/wp-content/plugins/imagecompresssqueezeimg/config/jp2.enabled ) {
+  set $rules_format_jp2 3;
+}
+if ( -f $document_root/wp-content/plugins/imagecompresssqueezeimg/config/avif.enabled ) {
+  set $rules_format_avif 5;
+}
+
+set $check1 $safari$rules_format_jp2;
+if ( $check1 = 13) {
+   set $format .jp2;
+}
+set $check2 $safari$rules_format_jpg;
+if ( $check2 = 01) {
+  set $format _compress.jpg;
+}
+set $check3 $safari$rules_format_webp;
+if ( $check3 = 02) {
+  set $format .webp;
+}
+set $check5 $safari$rules_format_avif;
+if ( $check5 = 05) {
+  set $format .avif;
+}
+
+set $check4 $safari$rules_format_jp2;
+if ( $check4 = 10) {
+    set $module_status 0;
+}
+
+if ( -f $request_filename$format) {
+ rewrite /?(.+\.(jpg|jpeg|png|gif)$) $uri$format last;
+ break;
+}
+
+
+if ( -f !$document_root/wp-content/plugins/imagecompresssqueezeimg/config/getimage.php) {
+    set $module_status 0;
+}
+if ($request_filename ~* "images_compress_squeezeimg"){
+    set $module_status 0;
+}
+if ($request_filename ~* "_compress"){
+  set $module_status 0;
+}
+
+if ( $module_status = 1 ) {
+  rewrite /?(.+)\.(jpg|jpeg|png|gif)$ /wp-json/imagecompress/getimage?url=$1.$2 last;
+}
+
+}
+

@@ -1,0 +1,163 @@
+#: compress-images-with-squeezeimg.php:
+msgid "Enable module"
+msgstr "Включить модуль"
+
+msgid "Convert images to webp format"
+msgstr "Преобразование изображений в формат webp"
+
+msgid "Convert images to jp2 format"
+msgstr "Преобразование изображений в формат jp2"
+
+msgid "Convert images to avif format"
+msgstr "Преобразование изображений в формат avif"
+
+msgid "Quality of compress"
+msgstr "Качество сжатия"
+
+msgid "gzip enabled"
+msgstr "gzip"
+
+msgid "Count send images in request"
+msgstr "Количество изображений в запросе"
+
+msgid "Lazy load"
+msgstr "Ленивая загрузка"
+
+msgid "Replace origin images"
+msgstr "Заменить исходные изображения"
+
+msgid "Sitemap"
+msgstr "Sitemap.xml"
+
+msgid "Token from <a target='_blank' href='https://squeezeimg.com/' >Squeezeimg.com</a> "
+msgstr "Токен из <a target='_blank' href='https://squeezeimg.com/' >Squeezeimg.com</a> "
+
+msgid "Images for loader"
+msgstr "Изображени для прелоадера"
+
+msgid "To add images, You need to upload an image to a folder:"
+msgstr "Чтобы добавить изображения, Вам необходимо загрузить изображение в папку:"
+
+msgid "WARNING !!!"
+msgstr "ВНИМАНИЕ !!!"
+
+msgid "Replaces original images with compressed ones."
+msgstr "Заменяет исходные изображения сжатыми."
+
+msgid "WITHOUT RESTORATION POSSIBILITY!"
+msgstr "БЕЗ ВОЗМОЖНОСТИ ВОССТАНОВЛЕНИЯ!"
+
+msgid "Create xml"
+msgstr "Создать xml"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Options"
+msgstr "Параметры"
+
+msgid "Compress and convert"
+msgstr "Сжатие и преобразование"
+
+msgid "Convert images in "
+msgstr "Конвертировать в "
+
+msgid "images origin"
+msgstr "Оригинальные изображения"
+
+msgid "Converted "
+msgstr "Сконвертированы в "
+
+msgid "Error "
+msgstr "Ошибки "
+
+msgid "Compress & convert"
+msgstr "Сжать и конвертировать"
+
+msgid "Return original"
+msgstr "Вернуть оригинал"
+
+msgid "Try compress"
+msgstr "Попробовать сжать"
+
+msgid "Select folder"
+msgstr "Выберите папку"
+
+msgid " Selected folder"
+msgstr " Выберите папку"
+
+msgid " Close"
+msgstr " Закрыть"
+
+msgid " Compress"
+msgstr " Сжать"
+
+msgid " Compress and Convert"
+msgstr " Сжать и преобразовать"
+
+msgid "Convert folder"
+msgstr "Конвертировать папку"
+
+msgid " Compression level"
+msgstr " Уровень сжатия"
+
+msgid " Low"
+msgstr " Низкий"
+
+msgid " Easy"
+msgstr " Средний"
+
+msgid " Hight"
+msgstr " Высокий"
+
+msgid " Reduces disk space"
+msgstr " Уменьшает место на диске"
+
+msgid " Convert Options"
+msgstr " Параметры преобразования"
+
+msgid "Enable Cron"
+msgstr "Включить Cron"
+
+msgid "Cron type"
+msgstr "Cron формат"
+
+msgid "Count send images for cron"
+msgstr "Количество картинок в запросе"
+
+msgid "Call time"
+msgstr "Интервал"
+
+msgid "Minute"
+msgstr "Минута"
+
+msgid "Convert images to jpg when uploading to media"
+msgstr "Преобразование изображений в jpg при загрузке"
+
+msgid "Convert images to webp when uploading to media"
+msgstr "Преобразование изображений в webp при загрузке"
+
+msgid "Convert images to jp2 when uploading to media"
+msgstr "Преобразование изображений в jp2 при загрузке"
+
+msgid "Convert images to avif when uploading to media"
+msgstr "Преобразование изображений в avif при загрузке"
+
+msgid "Compress jpg thumbnail"
+msgstr "Сжать миниатюры jpg"
+
+msgid "Compress webp thumbnail"
+msgstr "Сжать миниатюры webp"
+
+msgid "Compress jp2 thumbnail"
+msgstr "Сжать миниатюры jp2"
+
+msgid "Compress avif thumbnail"
+msgstr "Сжать миниатюры avif"
+
+msgid "Each media file can have multiple thumbnails"
+msgstr "Каждый медиафайл может иметь несколько миниатюр"
+
+msgid "Each thumbnail will be compressed separately!"
+msgstr "Каждая миниатюра будет сжата отдельно!"
+

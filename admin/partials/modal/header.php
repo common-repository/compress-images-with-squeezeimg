@@ -1,0 +1,1 @@
+<bottom id="kill-media-modal-imagecompress"><span class='kill-modal-imagecompress' aria-hidden="true">×</span></bottom>

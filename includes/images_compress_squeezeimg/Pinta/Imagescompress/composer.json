@@ -1,0 +1,37 @@
+{
+  "name": "pinta/imagescompress",
+  "type": "library",
+  "description": "Images Compress ",
+  "keywords": [],
+  "homepage": "https://pinta.com.ua",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pintawebware",
+      "email": "info@pinta.com.ua"
+    },
+    {
+      "name": "Images Compress",
+      "homepage": "https://pinta.com.ua/"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+  },
+  "require-dev": {
+
+  },
+
+  "autoload": {
+    "psr-4": { "Pinta\\Components\\Imagescompress\\": "" },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}

@@ -1,0 +1,163 @@
+#: compress-images-with-squeezeimg.php:
+msgid "Enable module"
+msgstr ""
+
+msgid "Convert images to webp format"
+msgstr ""
+
+msgid "Convert images to jp2 format"
+msgstr ""
+
+msgid "Convert images to avif format"
+msgstr ""
+
+msgid "Quality of compress"
+msgstr ""
+
+msgid "gzip enabled"
+msgstr ""
+
+msgid "Count send images in request"
+msgstr ""
+
+msgid "Lazy load"
+msgstr ""
+
+msgid "Replace origin images"
+msgstr ""
+
+msgid "Sitemap"
+msgstr ""
+
+msgid "Token from <a target='_blank' href='https://squeezeimg.com/' >Squeezeimg.com</a> "
+msgstr ""
+
+msgid "Images for loader"
+msgstr ""
+
+msgid "To add images, You need to upload an image to a folder:"
+msgstr ""
+
+msgid "WARNING !!!"
+msgstr ""
+
+msgid "Replaces original images with compressed ones."
+msgstr ""
+
+msgid "WITHOUT RESTORATION POSSIBILITY!"
+msgstr ""
+
+msgid "Create xml"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Options"
+msgstr ""
+
+msgid "Compress and convert"
+msgstr ""
+
+msgid "Convert images in "
+msgstr ""
+
+msgid "images origin"
+msgstr ""
+
+msgid "Converted "
+msgstr ""
+
+msgid "Error "
+msgstr ""
+
+msgid "Compress & convert"
+msgstr ""
+
+msgid "Return original"
+msgstr ""
+
+msgid "Try compress"
+msgstr ""
+
+msgid "Select folder"
+msgstr ""
+
+msgid " Selected folder"
+msgstr ""
+
+msgid " Close"
+msgstr ""
+
+msgid " Compress"
+msgstr ""
+
+msgid " Compress and Convert"
+msgstr ""
+
+msgid "Convert folder"
+msgstr ""
+
+msgid " Compression level"
+msgstr ""
+
+msgid " Low"
+msgstr ""
+
+msgid " Easy"
+msgstr ""
+
+msgid " Hight"
+msgstr ""
+
+msgid " Reduces disk space"
+msgstr ""
+
+msgid " Convert Options"
+msgstr ""
+
+msgid "Enable Cron"
+msgstr ""
+
+msgid "Cron type"
+msgstr ""
+
+msgid "Count send images for cron"
+msgstr ""
+
+msgid "Call time"
+msgstr ""
+
+msgid "Minute"
+msgstr ""
+
+msgid "Convert images to jpg when uploading to media"
+msgstr ""
+
+msgid "Convert images to webp when uploading to media"
+msgstr ""
+
+msgid "Convert images to jp2 when uploading to media"
+msgstr ""
+
+msgid "Convert images to avif when uploading to media"
+msgstr ""
+
+msgid "Compress jpg thumbnail"
+msgstr ""
+
+msgid "Compress webp thumbnail"
+msgstr ""
+
+msgid "Compress jp2 thumbnail"
+msgstr ""
+
+msgid "Compress avif thumbnail"
+msgstr ""
+
+msgid "Each media file can have multiple thumbnails"
+msgstr ""
+
+msgid "Each thumbnail will be compressed separately!"
+msgstr ""
+
